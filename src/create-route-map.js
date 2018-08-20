@@ -60,6 +60,9 @@ function addRouteRecord (
   }
 
   const pathToRegexpOptions: PathToRegexpOptions = route.pathToRegexpOptions || {}
+  /*
+  * @normalizedPath 拼接当前路由的路径
+  * */
   const normalizedPath = normalizePath(
     path,
     parent,

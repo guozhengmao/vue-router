@@ -18,6 +18,10 @@ import type { Matcher } from './create-matcher'
 export default class VueRouter {
   static install: () => void;
   static version: string;
+  /*
+  @params mode router模式 hash,history abstract(支持所有js运行环境)
+  @params fallback 浏览器不支持history  api回退到hash模式
+   */
 
   app: any;
   apps: Array<any>;
